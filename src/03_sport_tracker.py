@@ -10,3 +10,15 @@
 - каждый шаг выводить в формате "Шаг НОМЕР, калории КОЛИЧЕСТВО"
 - после достижения цели вывести сообщение "Шагов сделано: КОЛИЧЕСТВО"
 """
+
+cal_count = 5000
+cal_per_step = 340
+
+step_count = 0
+
+while cal_count > 3600:
+    step_count = step_count + 1
+    cal_count = cal_count - cal_per_step
+    print(f"Шаг {step_count}, калории {cal_count}")
+else:
+    print(f"Шагов сделано: {step_count}")
